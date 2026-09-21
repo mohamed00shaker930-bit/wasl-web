@@ -1,0 +1,67 @@
+{
+  "id": "/",
+  "name": "وصل",
+  "short_name": "وصل",
+  "description": "بقالة الحي في جوالك — اطلب، تابع، وادفع نقداً أو بالأجل",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#0E7C86",
+  "categories": ["shopping", "food", "lifestyle"],
+  "prefer_related_applications": false,
+  "launch_handler": { "client_mode": "focus-existing" },
+  "edge_side_panel": { "preferred_width": 420 },
+  "protocol_handlers": [
+    { "protocol": "web+baqalati", "url": "/?shared=%s" }
+  ],
+  "shortcuts": [
+    {
+      "name": "البقالات القريبة",
+      "short_name": "البقالات",
+      "description": "فتح قائمة البقالات والمنتجات",
+      "url": "/home",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "طلباتي",
+      "short_name": "طلباتي",
+      "description": "متابعة الطلبات الحالية والسابقة",
+      "url": "/orders",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "لوحة التاجر",
+      "short_name": "التاجر",
+      "description": "فتح لوحة التاجر ونقطة البيع",
+      "url": "/merchant",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    }
+  ],
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "الشاشة الرئيسية"
+    },
+    {
+      "src": "/screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "لوحة التاجر"
+    }
+  ]
+}

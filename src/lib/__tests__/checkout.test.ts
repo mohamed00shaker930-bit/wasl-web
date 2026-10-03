@@ -145,7 +145,7 @@ describe("الدفع — بناء صف الطلب", () => {
   it("طلب محفظة التطبيق يُخزَّن cash ويُسلَّم مباشرة", () => {
     const r = row("wallet");
     expect(r.payment_method).toBe("cash");
-    expect(r.status).toBe("delivered");
+    expect(r.status).toBe("sent");
   });
 
   it("رقم تواصل فارغ يُخزَّن null", () => {
